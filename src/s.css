@@ -1,0 +1,95 @@
+:root {
+  --c-bg-d: rgb(74,74,77);
+  --c-fg-d: rgb(215,215,216);
+  --c-bg-l: rgb(255,255,255);
+  --c-fg-l: rgb(0,0,0);
+  --c-al-d: rgb(255,255,255);
+  --c-av-d: rgb(177,177,180)
+}
+
+html {
+  font-family: BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 20px;
+}
+
+body {
+  background-color: var(--c-bg-d);
+  color: var(--c-fg-d);
+  line-height: 1.375;
+  margin: 0;
+}
+
+small > a {
+  font-weight: 300;
+  opacity: .2;
+}
+
+main {
+  max-width: 41rem;
+  margin: 7.5rem auto 10.5rem 3.5%;
+  padding-right: .5rem;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--c-bg-l);
+    color: var(--c-fg-l);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  a:link {
+    color: var(--c-al-d);
+  }
+
+  a:visited {
+    color: var(--c-av-d);
+  }
+}
+
+h1 {
+  font-weight: 900;
+}
+
+dt {
+  font-weight: 300;
+}
+
+dd {
+  font-weight: 500;
+  margin: 0;
+  padding: 0 0 1.25rem 0;
+}
+
+ul {
+  margin: 0;
+  padding: .375rem 0 0 1.375rem;
+  list-style: none;
+}
+
+li {
+  padding: 0 0 .5rem 0;
+}
+
+li::before {
+  display: inline-block;
+  font-weight: 100;
+  text-indent: -1.25rem;
+  content: "\2014";
+}
+
+em {
+  font-weight: 300;
+}
+
+kbd {
+  font-style: normal;
+}
+
+abbr {
+  font-style: normal;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  cursor: help;
+}
+

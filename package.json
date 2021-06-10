@@ -1,0 +1,20 @@
+{
+  "name": "wannaplay",
+  "version": "0.3.0",
+  "main": "src/index.html",
+  "repository": "git@github.com:sergetymo/wannaplay.git",
+  "author": "Serge Tymoshenko <serge@tymo.name>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --public-url . --no-source-maps --no-content-hash --no-cache && rm dist/*.css",
+    "deploy": "yarn build && node deploy"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "ftp-deploy": "^2.3.5",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-inliner": "^1.0.16"
+  },
+  "dependencies": {}
+}
